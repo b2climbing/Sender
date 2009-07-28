@@ -1,0 +1,17 @@
+div.userBox {
+  clear: both;
+  border: 1px dashed grey;
+  height: 40px;
+}
+
+div.userBox img {
+  padding: 5px;
+  border: 10px grey;
+  float: left;
+}
+
+div.userBox p {
+  margin-top: 10px;
+  padding-left: 10px;
+  float: left;
+}

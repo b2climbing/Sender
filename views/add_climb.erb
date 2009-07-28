@@ -1,0 +1,16 @@
+<div class="span-16">
+<fieldset>
+  <legend>Add a new climb</legend>
+  <form id="climb" method="post" action="/add_climb">
+  <p><input id="name" class="title" type="text" value="" name="name"/></p>
+  <p>
+    <select id='location' name='location'>
+      <% @locations.each do |location| %>
+      <option value='<%= location.id %>'><%= location.name %></option>
+      <% end %>
+    </select>
+  </p>
+  <p><input type="submit" value="Submit"/></p>
+  </form>
+</fieldset>
+</div>

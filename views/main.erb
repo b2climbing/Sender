@@ -1,0 +1,8 @@
+<div class="span-16">
+	<% @users.each do |user| %>
+	  <div class='userBox'>
+	    <img src='<%= Gravatar.get_url(user.email) %>'></img>
+	    <p><%= user.name %> wants to do <%= user.ticks.first.climb.name %></p>
+	  </div>
+	<% end %>
+</div>
